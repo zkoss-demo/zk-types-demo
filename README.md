@@ -1,8 +1,8 @@
-# Setup
+# TypeScript Declarations for the ZK Framework
 
+## Demo
 ```sh
-npm i -D typescript
-npm i -D ../../zkoss/zk/build/dts
+npm i -D typescript zk-types
 npx tsc --init
 ```
 Modify `tsconfig.json` to have:
@@ -21,4 +21,8 @@ const oldPanel = zk.augment(zul.wnd.Panel.prototype, {
         return oldPanel.onClose();
     }
 })
+```
+Compile with:
+```sh
+npx tsc
 ```
