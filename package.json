@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "typescript": "^4.9.3",
+    "zk-types": "^0.0.1"
+  }
+}
