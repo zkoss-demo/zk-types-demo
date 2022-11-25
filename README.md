@@ -1,11 +1,19 @@
 # TypeScript Declarations for the ZK Framework
 
-## Demo
+## Using this repo
+1. Clone this repo
+2. Modify `demo.ts`
+3. Compile with `npx tsc`
+4. See the output `demo.js` and copy it to your zk project.
+
+## Manually install `zk-types` in your custom repo
+
+1. Install `typescript` and `zk-types` with NPM
 ```sh
 npm i -D typescript zk-types
-npx tsc --init
+npx tsc --init // This will create a template tsconfig.json
 ```
-Modify `tsconfig.json` to have:
+2. Modify `tsconfig.json` to have:
 ```json
 {
     "compilerOptions": {
@@ -13,7 +21,7 @@ Modify `tsconfig.json` to have:
     }
 }
 ```
-Create a TS file with whatever name (e.g., `demo.ts`) and start typing:
+3. Create a TS file with whatever name (e.g., `demo.ts`) and start typing:
 ```ts
 const oldPanel = zk.augment(zul.wnd.Panel.prototype, {
     onClose(): void {
@@ -22,7 +30,4 @@ const oldPanel = zk.augment(zul.wnd.Panel.prototype, {
     }
 })
 ```
-Compile with:
-```sh
-npx tsc
-```
+4. Read the first section.
